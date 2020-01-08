@@ -3,20 +3,20 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="ltd.ygao.dao.PaperDao">
-    <resultMap id="paperResultMap" type="Paper">
+    <resultMap id="paperResultMap" type="ltd.ygao.pojo.Paper">
         <id property="paperId" column="paper_id"/>
         <result property="paperName" column="name"/>
         <result property="paperNum" column="number"/>
         <result property="paperDetail" column="detail"/>
 
     </resultMap>
-    <insert id="addPaper" parameterType="Paper">
+    <insert id="addPaper" parameterType="ltd.ygao.pojo.Paper">
         INSERT INTO paper(paper_id,name ,number ,detail)VALUES (#{paperId},#{paperName},#{paperNum},#{paperDetail})
     </insert>
     <delete id="deletePaper" parameterType="long">
         DELETE FROM paper WHERE paper_id#{paperId}
     </delete>
-    <update id="updatePaper" parameterType="Paper">
+    <update id="updatePaper" parameterType="ltd.ygao.pojo.Paper">
     UPDATE paper SET NAME = #{paperName},NUMBER = #{paperNum},detail = #{paperDetail}
     WHERE  paper_id = #{paperId}
     </update>

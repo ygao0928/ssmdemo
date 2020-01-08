@@ -43,6 +43,9 @@
         <div class="col-md-4 column">
             <a class="btn btn-primary" href="${path}/paper/toAddPaper">新增</a>
         </div>
+        <div class="col-md-4 column">
+            <a class="" href="${path}/login">登录跳转</a>
+        </div>
     </div>
     <div class="row clearfix">
         <div class="col-md-12 column">

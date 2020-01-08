@@ -1,6 +1,7 @@
 package ltd.ygao.service;
 
 import ltd.ygao.pojo.Paper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
